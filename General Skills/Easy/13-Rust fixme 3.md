@@ -1,6 +1,16 @@
+<p align="center">
 <img width="663" height="489" alt="image" src="https://github.com/user-attachments/assets/08b00134-d757-43a5-96f1-80bc371f9d40" />
+</p>
 
-#### متن سؤال:
+<br>
+
+<details>
+<summary dir="rtl"><strong>❓ متن سؤال</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 آیا با زبان برنامه‌نویسی Rust آشنایی دارید؟
 
 خطاهای نحوی و کامپایل موجود در فایل Rust را اصلاح کنید تا برنامه با موفقیت اجرا شود و فلگ را نمایش دهد.
@@ -10,45 +20,112 @@
 #### سرنخ:
 کامنت‌های موجود در سورس‌کد را با دقت بخوانید!
 
-***
+</div>
 
-#### مراحل حل:
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🛠️ راه حل</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 پس از دانلود فایل چالش، ابتدا فایل‌های موجود در مسیر فعلی را با دستور زیر مشاهده کردیم و برای استخراج آن از دستور زیر استفاده کردیم:
 
-<img width="506" height="356" alt="image" src="https://github.com/user-attachments/assets/b3297682-69bd-48de-a2be-d90872abebd1" />
+</div>
 
-`نکته: دستور tar برای ایجاد، مشاهده و استخراج فایل‌های Archive در لینوکس استفاده می‌شود.`
+<p align="center">
+<img width="506" height="356" alt="image" src="https://github.com/user-attachments/assets/b3297682-69bd-48de-a2be-d90872abebd1" />
+</p>
+
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+دستور tar برای ایجاد، مشاهده و استخراج فایل‌های Archive در لینوکس استفاده می‌شود.
+</blockquote>
+
 ```text
 -x → فایل‌ها را از Archive استخراج کن.
 -z → فایل با Gzip فشرده شده است.
 -f → نام فایل Archive بعد از این گزینه قرار می‌گیرد.
 ```
-`نکته: پسوند .tar.gz نشان می‌دهد چند فایل ابتدا داخل یک Archive از نوع TAR قرار گرفته و سپس با Gzip فشرده شده‌اند.`
+
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+پسوند .tar.gz نشان می‌دهد چند فایل ابتدا داخل یک Archive از نوع TAR قرار گرفته و سپس با Gzip فشرده شده‌اند.
+</blockquote>
+
+<div dir="rtl">
 
 برای کامپایل و اجرای پروژه، دستور زیر را اجرا کردیم:
 
 در اولین اجرا، Cargo کتابخانه‌های موردنیاز پروژه را دانلود و کامپایل کرد؛ اما هنگام کامپایل کد اصلی با خطای زیر مواجه شدیم:
 
+</div>
+
+<p align="center">
 <img width="1063" height="568" alt="image" src="https://github.com/user-attachments/assets/3f6a7827-b0eb-434f-8433-82dc0a511428" />
+</p>
+
+<div dir="rtl">
 
 کامپایلر اعلام می‌کند تابع `from_raw_parts` یک تابع `unsafe` است و نمی‌توان آن را خارج از یک تابع یا بلوک `unsafe` فراخوانی کرد.
 
-`نکته: دستور cargo run ابتدا برنامه را کامپایل می‌کند و در صورت موفقیت، فایل اجرایی را نیز اجرا می‌کند.`
+</div>
 
-`نکته: Cargo مدیر بسته و سیستم ساخت رسمی زبان Rust است و وظیفه‌ای مشابه pip در پایتون و npm در جاوااسکریپت دارد. با Cargo می‌توان پروژه Rust ایجاد کرد، وابستگی‌ها را مدیریت نمود، کد را با کامپایلر rustc کامپایل و اجرا کرد، تست‌ها و مستندات را ساخت و ابزارهای نوشته‌شده با Rust را نصب کرد.`
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+دستور cargo run ابتدا برنامه را کامپایل می‌کند و در صورت موفقیت، فایل اجرایی را نیز اجرا می‌کند.
+</blockquote>
 
-`نکته: زبان برنامه‌نویسی Rust یک زبان مدرن، کامپایل‌شونده، سریع و سطح‌پایین است که برای تولید نرم‌افزارهای پرسرعت، پایدار و کم‌مصرف با کنترل دقیق بر حافظه و سخت‌افزار طراحی شده است. Rust با هدف حفظ سرعت و قدرت زبان‌های C و C++ و در عین حال جلوگیری از خطاهای رایج و خطرناک حافظه مانند Buffer Overflow، Use After Free، Double Free و Data Race ساخته شد. این زبان بدون استفاده از Garbage Collector و با کمک سیستم Ownership و Borrowing، بسیاری از خطاهای حافظه را هنگام کامپایل شناسایی می‌کند. Rust در ساخت سیستم‌عامل‌ها، ابزارهای خط فرمان، سرورها، برنامه‌های شبکه، نرم‌افزارهای امنیتی، بازی‌ها، WebAssembly و ابزارهای CTF کاربرد دارد.`
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+Cargo مدیر بسته و سیستم ساخت رسمی زبان Rust است و وظیفه‌ای مشابه pip در پایتون و npm در جاوااسکریپت دارد. با Cargo می‌توان پروژه Rust ایجاد کرد، وابستگی‌ها را مدیریت نمود، کد را با کامپایلر rustc کامپایل و اجرا کرد، تست‌ها و مستندات را ساخت و ابزارهای نوشته‌شده با Rust را نصب کرد.
+</blockquote>
+
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+زبان برنامه‌نویسی Rust یک زبان مدرن، کامپایل‌شونده، سریع و سطح‌پایین است که برای تولید نرم‌افزارهای پرسرعت، پایدار و کم‌مصرف با کنترل دقیق بر حافظه و سخت‌افزار طراحی شده است. Rust با هدف حفظ سرعت و قدرت زبان‌های C و C++ و در عین حال جلوگیری از خطاهای رایج و خطرناک حافظه مانند Buffer Overflow، Use After Free، Double Free و Data Race ساخته شد. این زبان بدون استفاده از Garbage Collector و با کمک سیستم Ownership و Borrowing، بسیاری از خطاهای حافظه را هنگام کامپایل شناسایی می‌کند. Rust در ساخت سیستم‌عامل‌ها، ابزارهای خط فرمان، سرورها، برنامه‌های شبکه، نرم‌افزارهای امنیتی، بازی‌ها، WebAssembly و ابزارهای CTF کاربرد دارد.
+</blockquote>
+
+<div dir="rtl">
 
 علامت کامنت `//` را از ابتدای خط‌های زیر حذف کردیم:
 
+</div>
+
+<p align="center">
 <img width="1280" height="671" alt="image" src="https://github.com/user-attachments/assets/8a931846-9de8-430b-8aaf-e8be5221fb34" />
+</p>
+
+<div dir="rtl">
 
 بعد از ذخیره تغییرات، دوباره دستور زیر را اجرا کردیم:
 
-<img width="734" height="101" alt="image" src="https://github.com/user-attachments/assets/d264ca99-8f0b-4b74-b429-25fd3815b8a4" />
+</div>
 
-فلگ نهایی:
+<p align="center">
+<img width="734" height="101" alt="image" src="https://github.com/user-attachments/assets/d264ca99-8f0b-4b74-b429-25fd3815b8a4" />
+</p>
+
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🚩 فلگ نهایی ✅</strong></summary>
+
+<br>
 
 ```text
 picoCTF{n0w_y0uv3_f1x3d_1h3m_411}
 ```
+
+</details>
