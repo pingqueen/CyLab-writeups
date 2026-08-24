@@ -1,6 +1,16 @@
+<p align="center">
 <img width="661" height="772" alt="image" src="https://github.com/user-attachments/assets/fde60dd9-dda0-43fe-88c4-c5e44e79df97" />
+</p>
 
-#### متن سؤال:
+<br>
+
+<details>
+<summary dir="rtl"><strong>❓ متن سؤال</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 آیا می‌خواهید یک بازی انجام دهید؟
 
 هرچه بیشتر با Shell و برنامه‌های خط فرمان کار کنیم، ممکن است علاقه‌مند شویم بدانیم این برنامه‌ها چگونه کار می‌کنند.
@@ -13,33 +23,73 @@
 
 برای اتصال به سرویس از SSH استفاده می‌کنیم:
 
+</div>
+
 ```text
 ssh -p 64161 ctf-player@atlas.picoctf.net
 ```
 
+<div dir="rtl">
+
 رمز عبور:
+
+</div>
 
 ```text
 f3b61b38
 ```
-#### سرنخ‌ها:
+
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>💡 سرنخ</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 جست‌وجوی دودویی شبیه بازی «گرم‌تر یا سردتر» است. بعد از هر حدس، برنامه اعلام می‌کند عدد اصلی بزرگ‌تر یا کوچک‌تر است.
 
 تعداد حدس‌ها محدود است؛ بنابراین نباید عددها را یکی‌یکی امتحان کنیم و بهتر است با پرش‌های بزرگ، بازه را در هر مرحله کوچک کنیم.
 
 برنامه در هر اتصال یک عدد تصادفی جدید انتخاب می‌کند. اگر اتصال قطع شود و دوباره متصل شویم، باید جست‌وجو را از ابتدا و تقریباً از عدد `۵۰۰` شروع کنیم.
-***
-#### مراحل حل:
+
+</div>
+
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🛠️ راه حل</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 ابتدا با دستور زیر به سرویس متصل شدیم:
 
 در ادامه، براساس پاسخ‌های `Higher` و `Lower` حد بالا و پایین بازه را تغییر دادیم.
 
+</div>
 
+<p align="center">
 <img width="496" height="527" alt="image" src="https://github.com/user-attachments/assets/3fb561d1-ba4e-4599-8d6a-733caf56780c" />
+</p>
 
-فلگ نهایی:
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🚩 فلگ نهایی ✅</strong></summary>
+
+<br>
 
 ```text
 picoCTF{g00d_gu355_6dcfb67c}
 ```
 
+</details>
