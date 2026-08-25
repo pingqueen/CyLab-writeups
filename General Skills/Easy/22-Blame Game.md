@@ -1,55 +1,130 @@
+<p align="center">
 <img width="657" height="704" alt="image" src="https://github.com/user-attachments/assets/877420dd-54fd-4f0c-8069-52866640ea8f" />
+</p>
 
-#### متن سؤال:
+<br>
+
+<details>
+<summary dir="rtl"><strong>❓ متن سؤال</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 به نظر می‌رسد یکی از Commitهای اعضای تیم باعث شده برنامه دیگر به‌درستی اجرا نشود.
 
 چه کسی این تغییر خراب را ایجاد کرده است؟
 
 فایل‌های چالش داخل آرشیو زیر قرار دارند:
 
+</div>
+
 ```text
 challenge.zip
 ```
 
-#### سرنخ‌ها:
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>💡 سرنخ</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 در پروژه‌های تیمی افراد مختلف می‌توانند یک فایل را در زمان‌های متفاوت تغییر دهند.
 
  و Git ابزاری دارد که مشخص می‌کند هر خط فایل آخرین بار در کدام Commit و توسط چه نویسنده‌ای تغییر کرده است.
 
 برای مشاهده خطای برنامه می‌توان فایل Python را با دستور زیر اجرا کرد:
 
+</div>
+
 ```bash
 python3 message.py
 ```
 
+<div dir="rtl">
+
 بااین‌حال، برای دریافت فلگ الزاماً نیازی به اصلاح یا اجرای موفق برنامه نداریم.
 
-***
+</div>
 
-#### مراحل حل:
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🛠️ راه حل</strong></summary>
+
+<br>
+
+<div dir="rtl">
+
 ابتدا فایل‌های موجود در مسیر فعلی را مشاهده کردیم برای استخراج آن از دستور زیر استفاده کردیم:
 
-<img width="326" height="204" alt="image" src="https://github.com/user-attachments/assets/ab55c7cd-1147-43c8-a78b-154951e2ef8c" />
+</div>
 
-`نکته: دستور unzip فایل‌ها و پوشه‌های داخل یک Archive از نوع ZIP را استخراج می‌کند.`
+<p align="center">
+<img width="326" height="204" alt="image" src="https://github.com/user-attachments/assets/ab55c7cd-1147-43c8-a78b-154951e2ef8c" />
+</p>
+
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+دستور unzip فایل‌ها و پوشه‌های داخل یک Archive از نوع ZIP را استخراج می‌کند.
+</blockquote>
+
+<div dir="rtl">
 
 سپس تمام فایل‌های عادی و مخفی را نمایش دادیم:
 
+</div>
+
+<p align="center">
 <img width="560" height="217" alt="image" src="https://github.com/user-attachments/assets/65467712-a818-48e3-a084-5bbf53e247b7" />
+</p>
+
+<div dir="rtl">
 
 فایل `message.py` برنامه‌ای است که در حال حاضر به‌درستی اجرا نمی‌شود.
 برای مشاهده سورس‌کد از دستور زیر استفاده کردیم:
 
+</div>
+
+<p align="center">
 <img width="453" height="218" alt="image" src="https://github.com/user-attachments/assets/c9b932c6-1e47-4913-bf62-884cd422fffb" />
+</p>
+
+<div dir="rtl">
 
 برای مشاهده اینکه آخرین تغییر هر خط توسط چه کسی انجام شده است، دستور زیر را اجرا کردیم:
 
+</div>
+
+<p align="center">
 <img width="971" height="75" alt="image" src="https://github.com/user-attachments/assets/06f7cfb3-57d5-4669-8b6d-1ce08c458bb0" />
+</p>
 
-`نکته: دستور git blame برای مشخص‌کردن تاریخچه هر خط از یک فایل استفاده می‌شود. این دستور نشان می‌دهد هر خط آخرین بار در کدام Commit، توسط چه شخصی و در چه تاریخی اضافه یا تغییر داده شده است.`
+<blockquote dir="rtl">
+<strong>📝 نکته</strong>
+<br><br>
+دستور git blame برای مشخص‌کردن تاریخچه هر خط از یک فایل استفاده می‌شود. این دستور نشان می‌دهد هر خط آخرین بار در کدام Commit، توسط چه شخصی و در چه تاریخی اضافه یا تغییر داده شده است.
+</blockquote>
 
-فلگ نهایی:
+</details>
+
+<br>
+
+<details>
+<summary dir="rtl"><strong>🚩 فلگ نهایی ✅</strong></summary>
+
+<br>
 
 ```text
 picoCTF{ask_th3_1nt3rn_ea346835}
 ```
+
+</details>
